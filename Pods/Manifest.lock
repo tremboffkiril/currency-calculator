@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Differ (1.4.3)
+  - DropDown (2.3.13)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
+  - SwiftyJSON (4.3.0)
+  - Toaster (2.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Differ
+  - DropDown
+  - NVActivityIndicatorView (~> 4.7.0)
+  - SwiftyJSON (~> 4.0)
+  - Toaster (~> 2.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Differ
+    - DropDown
+    - NVActivityIndicatorView
+    - SwiftyJSON
+    - Toaster
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Differ: 6c7477d6187e8c36d02ec342a3c321061b85a0ea
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  Toaster: c1a81b376edcc2470157b4d1ee1e9341d3b96455
+
+PODFILE CHECKSUM: 9543e6998e08a60005a54ef3c3a614e7dcdfc269
+
+COCOAPODS: 1.8.4

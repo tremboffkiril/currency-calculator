@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CurrencyCell" id="gTV-IL-0wX" customClass="CurrencyCell" customModule="trembovetskiy_curr_calc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="254" height="218"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="254" height="218"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UM0-Fr-ZxA">
+                        <rect key="frame" x="0.0" y="0.0" width="254" height="109"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="63"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2350.6" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyv-xX-239">
+                        <rect key="frame" x="0.0" y="109" width="254" height="109"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UM0-Fr-ZxA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Amy-La-4xF"/>
+                <constraint firstItem="Vyv-xX-239" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HW1-tP-gMg"/>
+                <constraint firstItem="UM0-Fr-ZxA" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="KTr-E5-A0W"/>
+                <constraint firstAttribute="bottom" secondItem="Vyv-xX-239" secondAttribute="bottom" id="Ot3-f4-Rp9"/>
+                <constraint firstAttribute="trailing" secondItem="UM0-Fr-ZxA" secondAttribute="trailing" id="VC1-Cm-kIK"/>
+                <constraint firstAttribute="trailing" secondItem="Vyv-xX-239" secondAttribute="trailing" id="l0h-dM-i1s"/>
+                <constraint firstItem="UM0-Fr-ZxA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="puY-GA-YQB"/>
+                <constraint firstItem="Vyv-xX-239" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="qdC-t7-JpS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="254" height="218"/>
+            <connections>
+                <outlet property="currencyNameLabel" destination="UM0-Fr-ZxA" id="cBv-az-VYr"/>
+                <outlet property="currencyValueLabel" destination="Vyv-xX-239" id="noa-y0-ibZ"/>
+            </connections>
+            <point key="canvasLocation" x="285.50724637681162" y="190.84821428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

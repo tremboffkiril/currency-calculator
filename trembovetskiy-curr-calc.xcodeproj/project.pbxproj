@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E29C8A9238F649C004A9ACF /* CalculatorController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E29C8A8238F649C004A9ACF /* CalculatorController+Extensions.swift */; };
+		9E5C7167238B3B5500851E72 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E5C7166238B3B5500851E72 /* Calculator.storyboard */; };
+		9E5C7169238B3B7200851E72 /* CurrencyListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C7168238B3B7200851E72 /* CurrencyListController.swift */; };
+		9E5C716B238B3B8A00851E72 /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C716A238B3B8A00851E72 /* CalculatorController.swift */; };
+		9E5C716D238B3BD300851E72 /* CurrencyListController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C716C238B3BD300851E72 /* CurrencyListController+Extensions.swift */; };
+		9E5C7173238F2F1300851E72 /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C7171238F2F1300851E72 /* CurrencyCell.swift */; };
+		9E5C7174238F2F1300851E72 /* CurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5C7172238F2F1300851E72 /* CurrencyCell.xib */; };
+		9E5C7176238F308E00851E72 /* CurrencyListController+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C7175238F308E00851E72 /* CurrencyListController+Data.swift */; };
+		9E738C442385A58A00A723CC /* Key-dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E738C412385A58A00A723CC /* Key-dev.plist */; };
+		9E738C552385A5FE00A723CC /* KeysService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E738C4C2385A5FD00A723CC /* KeysService.swift */; };
+		9E738C562385A5FE00A723CC /* KeyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E738C4D2385A5FD00A723CC /* KeyType.swift */; };
+		9E738C572385A5FE00A723CC /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E738C4F2385A5FE00A723CC /* ReachabilityService.swift */; };
+		9E738C5C2385A64200A723CC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E738C592385A64200A723CC /* UIColorExtension.swift */; };
+		9E738C682385AAFB00A723CC /* RestAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E738C672385AAFB00A723CC /* RestAPIModel.swift */; };
+		9EA5D8F7238F6DCF00C00993 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5D8F6238F6DCF00C00993 /* DoubleExtensions.swift */; };
+		9ED068FD2381D46200386E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED068FC2381D46200386E72 /* AppDelegate.swift */; };
+		9ED068FF2381D46200386E72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED068FE2381D46200386E72 /* SceneDelegate.swift */; };
+		9ED069062381D46600386E72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED069052381D46600386E72 /* Assets.xcassets */; };
+		9ED069092381D46600386E72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED069072381D46600386E72 /* LaunchScreen.storyboard */; };
+		9EFE1E692381D687009ECEDE /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE1E492381D687009ECEDE /* ErrorModel.swift */; };
+		9EFE1E6B2381D687009ECEDE /* RestAPIModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE1E4C2381D687009ECEDE /* RestAPIModelProtocol.swift */; };
+		9EFE1E6C2381D687009ECEDE /* ResultArrayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE1E4D2381D687009ECEDE /* ResultArrayModel.swift */; };
+		9EFE1E702381D687009ECEDE /* RestBase+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE1E532381D687009ECEDE /* RestBase+Model.swift */; };
+		9EFE1E712381D687009ECEDE /* RestBase+Cancel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE1E542381D687009ECEDE /* RestBase+Cancel.swift */; };
+		9EFE1E732381D687009ECEDE /* RestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE1E562381D687009ECEDE /* RestBase.swift */; };
+		9EFE1E782381D687009ECEDE /* RestSuffix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE1E5D2381D687009ECEDE /* RestSuffix.swift */; };
+		9EFE1E792381D687009ECEDE /* RestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE1E5E2381D687009ECEDE /* RestMethod.swift */; };
+		9EFE1E7A2381D687009ECEDE /* RestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE1E5F2381D687009ECEDE /* RestError.swift */; };
+		9EFE1E802381DA21009ECEDE /* LoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE1E7D2381DA21009ECEDE /* LoaderService.swift */; };
+		9EFE1E812381DA21009ECEDE /* LoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EFE1E7E2381DA21009ECEDE /* LoaderView.xib */; };
+		9EFE1E822381DA21009ECEDE /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE1E7F2381DA21009ECEDE /* LoaderView.swift */; };
+		9EFFE40E238F348A00419BB1 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFE40D238F348A00419BB1 /* CurrencyModel.swift */; };
+		9EFFE410238F352E00419BB1 /* RestCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFE40F238F352E00419BB1 /* RestCurrency.swift */; };
+		9EFFE412238F366900419BB1 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFE411238F366900419BB1 /* UIViewControllerExtensions.swift */; };
+		9EFFE414238F4B1700419BB1 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFE413238F4B1700419BB1 /* UICollectionViewExtensions.swift */; };
+		9EFFE416238F510300419BB1 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFE415238F510300419BB1 /* CurrencyService.swift */; };
+		AD3C929CDA8971C46B12596F /* Pods_trembovetskiy_curr_calc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A644EF7495879A79C4036B /* Pods_trembovetskiy_curr_calc.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B110062B65F4D4455B7A674 /* Pods-trembovetskiy-curr-calc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trembovetskiy-curr-calc.release.xcconfig"; path = "Target Support Files/Pods-trembovetskiy-curr-calc/Pods-trembovetskiy-curr-calc.release.xcconfig"; sourceTree = "<group>"; };
+		6FB8F8C973A047AC019558E8 /* Pods-trembovetskiy-curr-calc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trembovetskiy-curr-calc.debug.xcconfig"; path = "Target Support Files/Pods-trembovetskiy-curr-calc/Pods-trembovetskiy-curr-calc.debug.xcconfig"; sourceTree = "<group>"; };
+		70A644EF7495879A79C4036B /* Pods_trembovetskiy_curr_calc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trembovetskiy_curr_calc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E29C8A8238F649C004A9ACF /* CalculatorController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalculatorController+Extensions.swift"; sourceTree = "<group>"; };
+		9E5C7166238B3B5500851E72 /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
+		9E5C7168238B3B7200851E72 /* CurrencyListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListController.swift; sourceTree = "<group>"; };
+		9E5C716A238B3B8A00851E72 /* CalculatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
+		9E5C716C238B3BD300851E72 /* CurrencyListController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrencyListController+Extensions.swift"; sourceTree = "<group>"; };
+		9E5C7171238F2F1300851E72 /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		9E5C7172238F2F1300851E72 /* CurrencyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCell.xib; sourceTree = "<group>"; };
+		9E5C7175238F308E00851E72 /* CurrencyListController+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrencyListController+Data.swift"; sourceTree = "<group>"; };
+		9E738C412385A58A00A723CC /* Key-dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Key-dev.plist"; sourceTree = "<group>"; };
+		9E738C4C2385A5FD00A723CC /* KeysService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeysService.swift; sourceTree = "<group>"; };
+		9E738C4D2385A5FD00A723CC /* KeyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyType.swift; sourceTree = "<group>"; };
+		9E738C4F2385A5FE00A723CC /* ReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
+		9E738C592385A64200A723CC /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		9E738C672385AAFB00A723CC /* RestAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIModel.swift; sourceTree = "<group>"; };
+		9EA5D8F6238F6DCF00C00993 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		9ED068F92381D46200386E72 /* trembovetskiy-curr-calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trembovetskiy-curr-calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED068FC2381D46200386E72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9ED068FE2381D46200386E72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9ED069052381D46600386E72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9ED069082381D46600386E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9ED0690A2381D46600386E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EFE1E492381D687009ECEDE /* ErrorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		9EFE1E4C2381D687009ECEDE /* RestAPIModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPIModelProtocol.swift; sourceTree = "<group>"; };
+		9EFE1E4D2381D687009ECEDE /* ResultArrayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultArrayModel.swift; sourceTree = "<group>"; };
+		9EFE1E532381D687009ECEDE /* RestBase+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestBase+Model.swift"; sourceTree = "<group>"; };
+		9EFE1E542381D687009ECEDE /* RestBase+Cancel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestBase+Cancel.swift"; sourceTree = "<group>"; };
+		9EFE1E562381D687009ECEDE /* RestBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestBase.swift; sourceTree = "<group>"; };
+		9EFE1E5D2381D687009ECEDE /* RestSuffix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestSuffix.swift; sourceTree = "<group>"; };
+		9EFE1E5E2381D687009ECEDE /* RestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestMethod.swift; sourceTree = "<group>"; };
+		9EFE1E5F2381D687009ECEDE /* RestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestError.swift; sourceTree = "<group>"; };
+		9EFE1E7D2381DA21009ECEDE /* LoaderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderService.swift; sourceTree = "<group>"; };
+		9EFE1E7E2381DA21009ECEDE /* LoaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoaderView.xib; sourceTree = "<group>"; };
+		9EFE1E7F2381DA21009ECEDE /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		9EFFE40D238F348A00419BB1 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		9EFFE40F238F352E00419BB1 /* RestCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestCurrency.swift; sourceTree = "<group>"; };
+		9EFFE411238F366900419BB1 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		9EFFE413238F4B1700419BB1 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
+		9EFFE415238F510300419BB1 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9ED068F62381D46200386E72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3C929CDA8971C46B12596F /* Pods_trembovetskiy_curr_calc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6647F768ABB0F142F5E1A5A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70A644EF7495879A79C4036B /* Pods_trembovetskiy_curr_calc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A2C7DCA5E3EA3C5EEC470DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FB8F8C973A047AC019558E8 /* Pods-trembovetskiy-curr-calc.debug.xcconfig */,
+				4B110062B65F4D4455B7A674 /* Pods-trembovetskiy-curr-calc.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9E29C8A6238F646D004A9ACF /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				9E5C7168238B3B7200851E72 /* CurrencyListController.swift */,
+				9E5C716C238B3BD300851E72 /* CurrencyListController+Extensions.swift */,
+				9E5C7175238F308E00851E72 /* CurrencyListController+Data.swift */,
+			);
+			path = CurrencyList;
+			sourceTree = "<group>";
+		};
+		9E29C8A7238F647C004A9ACF /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				9E5C716A238B3B8A00851E72 /* CalculatorController.swift */,
+				9E29C8A8238F649C004A9ACF /* CalculatorController+Extensions.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		9E5C7163238B3B2600851E72 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				9E5C7165238B3B4400851E72 /* Interface */,
+				9E5C7164238B3B3A00851E72 /* Controllers */,
+				9E5C716E238F2EDD00851E72 /* Cells */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		9E5C7164238B3B3A00851E72 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E29C8A6238F646D004A9ACF /* CurrencyList */,
+				9E29C8A7238F647C004A9ACF /* Calculator */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9E5C7165238B3B4400851E72 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				9E5C7166238B3B5500851E72 /* Calculator.storyboard */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		9E5C716E238F2EDD00851E72 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9E5C716F238F2EE300851E72 /* CollectionViewCells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9E5C716F238F2EE300851E72 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				9E5C7170238F2EF000851E72 /* CurrencyCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		9E5C7170238F2EF000851E72 /* CurrencyCell */ = {
+			isa = PBXGroup;
+			children = (
+				9E5C7171238F2F1300851E72 /* CurrencyCell.swift */,
+				9E5C7172238F2F1300851E72 /* CurrencyCell.xib */,
+			);
+			path = CurrencyCell;
+			sourceTree = "<group>";
+		};
+		9E5C7177238F314900851E72 /* CurrencyModel */ = {
+			isa = PBXGroup;
+			children = (
+				9EFFE40D238F348A00419BB1 /* CurrencyModel.swift */,
+			);
+			path = CurrencyModel;
+			sourceTree = "<group>";
+		};
+		9E738C3E2385A58A00A723CC /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				9E738C412385A58A00A723CC /* Key-dev.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		9E738C4B2385A5FD00A723CC /* KeysService */ = {
+			isa = PBXGroup;
+			children = (
+				9E738C4C2385A5FD00A723CC /* KeysService.swift */,
+				9E738C4D2385A5FD00A723CC /* KeyType.swift */,
+			);
+			path = KeysService;
+			sourceTree = "<group>";
+		};
+		9E738C4E2385A5FE00A723CC /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				9E738C4F2385A5FE00A723CC /* ReachabilityService.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		9E738C5E2385A64500A723CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9E738C592385A64200A723CC /* UIColorExtension.swift */,
+				9EFFE411238F366900419BB1 /* UIViewControllerExtensions.swift */,
+				9EFFE413238F4B1700419BB1 /* UICollectionViewExtensions.swift */,
+				9EA5D8F6238F6DCF00C00993 /* DoubleExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9ED068F02381D46200386E72 = {
+			isa = PBXGroup;
+			children = (
+				9ED068FB2381D46200386E72 /* trembovetskiy-curr-calc */,
+				9ED068FA2381D46200386E72 /* Products */,
+				8A2C7DCA5E3EA3C5EEC470DE /* Pods */,
+				6647F768ABB0F142F5E1A5A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9ED068FA2381D46200386E72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ED068F92381D46200386E72 /* trembovetskiy-curr-calc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ED068FB2381D46200386E72 /* trembovetskiy-curr-calc */ = {
+			isa = PBXGroup;
+			children = (
+				9ED069102381D4B700386E72 /* AppDelegate */,
+				9ED069152381D4F200386E72 /* SceneDelegate */,
+				9ED069112381D4BF00386E72 /* Modules */,
+				9EFE1E352381D687009ECEDE /* Data */,
+				9ED069132381D4D700386E72 /* Common */,
+				9EFE1E7B2381DA17009ECEDE /* Services */,
+				9ED069142381D4E600386E72 /* Resources */,
+				9ED0690A2381D46600386E72 /* Info.plist */,
+			);
+			path = "trembovetskiy-curr-calc";
+			sourceTree = "<group>";
+		};
+		9ED069102381D4B700386E72 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9ED068FC2381D46200386E72 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9ED069112381D4BF00386E72 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9E5C7163238B3B2600851E72 /* Calculator */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9ED069132381D4D700386E72 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9E738C5E2385A64500A723CC /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9ED069142381D4E600386E72 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9ED069072381D46600386E72 /* LaunchScreen.storyboard */,
+				9E738C3E2385A58A00A723CC /* Plists */,
+				9ED069162381D50300386E72 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9ED069152381D4F200386E72 /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9ED068FE2381D46200386E72 /* SceneDelegate.swift */,
+			);
+			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		9ED069162381D50300386E72 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9ED069052381D46600386E72 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9EFE1E352381D687009ECEDE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9EFE1E362381D687009ECEDE /* Models */,
+				9EFE1E512381D687009ECEDE /* RestAPI */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9EFE1E362381D687009ECEDE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E5C7177238F314900851E72 /* CurrencyModel */,
+				9EFE1E482381D687009ECEDE /* Error */,
+				9EFE1E4A2381D687009ECEDE /* Base */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9EFE1E482381D687009ECEDE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				9EFE1E492381D687009ECEDE /* ErrorModel.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		9EFE1E4A2381D687009ECEDE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9EFE1E4C2381D687009ECEDE /* RestAPIModelProtocol.swift */,
+				9EFE1E4D2381D687009ECEDE /* ResultArrayModel.swift */,
+				9E738C672385AAFB00A723CC /* RestAPIModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9EFE1E512381D687009ECEDE /* RestAPI */ = {
+			isa = PBXGroup;
+			children = (
+				9EFE1E522381D687009ECEDE /* Calls */,
+				9EFE1E572381D687009ECEDE /* Operations */,
+				9EFE1E5C2381D687009ECEDE /* RestConstants */,
+			);
+			path = RestAPI;
+			sourceTree = "<group>";
+		};
+		9EFE1E522381D687009ECEDE /* Calls */ = {
+			isa = PBXGroup;
+			children = (
+				9EFE1E532381D687009ECEDE /* RestBase+Model.swift */,
+				9EFE1E542381D687009ECEDE /* RestBase+Cancel.swift */,
+				9EFE1E562381D687009ECEDE /* RestBase.swift */,
+			);
+			path = Calls;
+			sourceTree = "<group>";
+		};
+		9EFE1E572381D687009ECEDE /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				9EFFE40F238F352E00419BB1 /* RestCurrency.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		9EFE1E5C2381D687009ECEDE /* RestConstants */ = {
+			isa = PBXGroup;
+			children = (
+				9EFE1E5D2381D687009ECEDE /* RestSuffix.swift */,
+				9EFE1E5E2381D687009ECEDE /* RestMethod.swift */,
+				9EFE1E5F2381D687009ECEDE /* RestError.swift */,
+			);
+			path = RestConstants;
+			sourceTree = "<group>";
+		};
+		9EFE1E7B2381DA17009ECEDE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9E738C4B2385A5FD00A723CC /* KeysService */,
+				9E738C4E2385A5FE00A723CC /* Reachability */,
+				9EFE1E7C2381DA21009ECEDE /* Loader */,
+				9EFFE415238F510300419BB1 /* CurrencyService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9EFE1E7C2381DA21009ECEDE /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				9EFE1E7D2381DA21009ECEDE /* LoaderService.swift */,
+				9EFE1E7E2381DA21009ECEDE /* LoaderView.xib */,
+				9EFE1E7F2381DA21009ECEDE /* LoaderView.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9ED068F82381D46200386E72 /* trembovetskiy-curr-calc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ED0690D2381D46600386E72 /* Build configuration list for PBXNativeTarget "trembovetskiy-curr-calc" */;
+			buildPhases = (
+				7DE9C994733A8C6AD5A6A9D3 /* [CP] Check Pods Manifest.lock */,
+				9ED068F52381D46200386E72 /* Sources */,
+				9ED068F62381D46200386E72 /* Frameworks */,
+				9ED068F72381D46200386E72 /* Resources */,
+				32BD5640922187E3E7A2149B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "trembovetskiy-curr-calc";
+			productName = "trembovetskiy-curr-calc";
+			productReference = 9ED068F92381D46200386E72 /* trembovetskiy-curr-calc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9ED068F12381D46200386E72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				TargetAttributes = {
+					9ED068F82381D46200386E72 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 9ED068F42381D46200386E72 /* Build configuration list for PBXProject "trembovetskiy-curr-calc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9ED068F02381D46200386E72;
+			productRefGroup = 9ED068FA2381D46200386E72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9ED068F82381D46200386E72 /* trembovetskiy-curr-calc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9ED068F72381D46200386E72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E738C442385A58A00A723CC /* Key-dev.plist in Resources */,
+				9ED069092381D46600386E72 /* LaunchScreen.storyboard in Resources */,
+				9EFE1E812381DA21009ECEDE /* LoaderView.xib in Resources */,
+				9E5C7167238B3B5500851E72 /* Calculator.storyboard in Resources */,
+				9E5C7174238F2F1300851E72 /* CurrencyCell.xib in Resources */,
+				9ED069062381D46600386E72 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32BD5640922187E3E7A2149B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-trembovetskiy-curr-calc/Pods-trembovetskiy-curr-calc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-trembovetskiy-curr-calc/Pods-trembovetskiy-curr-calc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-trembovetskiy-curr-calc/Pods-trembovetskiy-curr-calc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DE9C994733A8C6AD5A6A9D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-trembovetskiy-curr-calc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9ED068F52381D46200386E72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E738C552385A5FE00A723CC /* KeysService.swift in Sources */,
+				9ED068FD2381D46200386E72 /* AppDelegate.swift in Sources */,
+				9E5C716D238B3BD300851E72 /* CurrencyListController+Extensions.swift in Sources */,
+				9E738C562385A5FE00A723CC /* KeyType.swift in Sources */,
+				9EFFE416238F510300419BB1 /* CurrencyService.swift in Sources */,
+				9E5C7176238F308E00851E72 /* CurrencyListController+Data.swift in Sources */,
+				9ED068FF2381D46200386E72 /* SceneDelegate.swift in Sources */,
+				9EFE1E702381D687009ECEDE /* RestBase+Model.swift in Sources */,
+				9EFE1E802381DA21009ECEDE /* LoaderService.swift in Sources */,
+				9EFE1E692381D687009ECEDE /* ErrorModel.swift in Sources */,
+				9EFE1E732381D687009ECEDE /* RestBase.swift in Sources */,
+				9EFE1E782381D687009ECEDE /* RestSuffix.swift in Sources */,
+				9EFFE410238F352E00419BB1 /* RestCurrency.swift in Sources */,
+				9E738C5C2385A64200A723CC /* UIColorExtension.swift in Sources */,
+				9E29C8A9238F649C004A9ACF /* CalculatorController+Extensions.swift in Sources */,
+				9EFFE414238F4B1700419BB1 /* UICollectionViewExtensions.swift in Sources */,
+				9EFE1E6C2381D687009ECEDE /* ResultArrayModel.swift in Sources */,
+				9EFE1E792381D687009ECEDE /* RestMethod.swift in Sources */,
+				9E738C682385AAFB00A723CC /* RestAPIModel.swift in Sources */,
+				9EFFE412238F366900419BB1 /* UIViewControllerExtensions.swift in Sources */,
+				9E5C7169238B3B7200851E72 /* CurrencyListController.swift in Sources */,
+				9EFE1E7A2381D687009ECEDE /* RestError.swift in Sources */,
+				9EA5D8F7238F6DCF00C00993 /* DoubleExtensions.swift in Sources */,
+				9E5C716B238B3B8A00851E72 /* CalculatorController.swift in Sources */,
+				9EFE1E712381D687009ECEDE /* RestBase+Cancel.swift in Sources */,
+				9EFFE40E238F348A00419BB1 /* CurrencyModel.swift in Sources */,
+				9EFE1E822381DA21009ECEDE /* LoaderView.swift in Sources */,
+				9E738C572385A5FE00A723CC /* ReachabilityService.swift in Sources */,
+				9EFE1E6B2381D687009ECEDE /* RestAPIModelProtocol.swift in Sources */,
+				9E5C7173238F2F1300851E72 /* CurrencyCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9ED069072381D46600386E72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ED069082381D46600386E72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9ED0690B2381D46600386E72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9ED0690C2381D46600386E72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9ED0690E2381D46600386E72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FB8F8C973A047AC019558E8 /* Pods-trembovetskiy-curr-calc.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33HPK7564T;
+				INFOPLIST_FILE = "trembovetskiy-curr-calc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ios.trembovetskiy-curr-calc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9ED0690F2381D46600386E72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B110062B65F4D4455B7A674 /* Pods-trembovetskiy-curr-calc.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33HPK7564T;
+				INFOPLIST_FILE = "trembovetskiy-curr-calc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ios.trembovetskiy-curr-calc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9ED068F42381D46200386E72 /* Build configuration list for PBXProject "trembovetskiy-curr-calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ED0690B2381D46600386E72 /* Debug */,
+				9ED0690C2381D46600386E72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ED0690D2381D46600386E72 /* Build configuration list for PBXNativeTarget "trembovetskiy-curr-calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ED0690E2381D46600386E72 /* Debug */,
+				9ED0690F2381D46600386E72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9ED068F12381D46200386E72 /* Project object */;
+}
